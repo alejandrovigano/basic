@@ -5,7 +5,6 @@
 	xsi:schemaLocation=" http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
 
 
-	<bean id="init" class="ar.com.vga.bo.InitContext">
-	</bean>
+	<import resource="classpath*:spring/*.xml" />
 
 </beans>

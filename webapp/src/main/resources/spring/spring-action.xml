@@ -5,6 +5,7 @@
 	xsi:schemaLocation=" http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
 
 
-	<import resource="classpath*:spring/*.xml" />
+	<bean id="home.action" class="ar.com.vga.action.HomeAction" scope="prototype">
+	</bean>
 
 </beans>
