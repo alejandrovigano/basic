@@ -1,0 +1,171 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building webapp 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> appengine-maven-plugin:1.8.4:devserver (default-cli) > package @ webapp >>>
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ webapp ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 8 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ webapp ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ webapp ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\Usuario\git\basic\webapp\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ webapp ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ webapp ---
+[INFO] Surefire report directory: C:\Users\Usuario\git\basic\webapp\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running ar.com.vga.GuestbookServletTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.414 sec
+Running ar.com.vga.SignGuestbookServletTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.397 sec
+
+Results :
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-war-plugin:2.3:war (default-war) @ webapp ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [webapp] in [C:\Users\Usuario\git\basic\webapp\target\webapp-1.0-SNAPSHOT]
+[INFO] Processing war project
+[INFO] Copying webapp webResources [C:\Users\Usuario\git\basic\webapp/src/main/webapp/WEB-INF] to [C:\Users\Usuario\git\basic\webapp\target\webapp-1.0-SNAPSHOT]
+[INFO] Copying webapp resources [C:\Users\Usuario\git\basic\webapp\src\main\webapp]
+[INFO] Building jar: C:\Users\Usuario\git\basic\webapp\target\webapp-1.0-SNAPSHOT\WEB-INF\lib\webapp-1.0-SNAPSHOT.jar
+[INFO] Webapp assembled in [231 msecs]
+[INFO] Building war: C:\Users\Usuario\git\basic\webapp\target\webapp-1.0-SNAPSHOT.war
+[INFO] 
+[INFO] <<< appengine-maven-plugin:1.8.4:devserver (default-cli) < package @ webapp <<<
+[INFO] 
+[INFO] --- appengine-maven-plugin:1.8.4:devserver (default-cli) @ webapp ---
+[INFO] 
+[INFO] Google App Engine Java SDK - Running Development Server
+[INFO] 
+[INFO] Retrieving Google App Engine Java SDK from Maven
+[INFO] Running C:\Program Files (x86)\Java\jdk1.7.0_03\jre\bin\java -javaagent:C:\Users\Usuario\.m2\repository\com\google\appengine\appengine-java-sdk\1.8.4\appengine-java-sdk\appengine-java-sdk-1.8.4\lib\agent\appengine-agent.jar -Xbootclasspath/p:C:\Users\Usuario\.m2\repository\com\google\appengine\appengine-java-sdk\1.8.4\appengine-java-sdk\appengine-java-sdk-1.8.4\lib\override\appengine-dev-jdk-overrides.jar -Dappengine.fullscan.seconds=5 -classpath C:\Users\Usuario\.m2\repository\com\google\appengine\appengine-java-sdk\1.8.4\appengine-java-sdk\appengine-java-sdk-1.8.4\lib\appengine-tools-api.jar com.google.appengine.tools.development.DevAppServerMain --allow_remote_shutdown --disable_update_check C:\Users\Usuario\git\basic\webapp\target/webapp-1.0-SNAPSHOT
+[INFO] jul 26, 2014 5:57:16 PM com.google.apphosting.utils.config.AppEngineWebXmlReader readAppEngineWebXml
+[INFO] Información: Successfully processed C:\Users\Usuario\git\basic\webapp\target\webapp-1.0-SNAPSHOT\WEB-INF/appengine-web.xml
+[INFO] jul 26, 2014 5:57:16 PM com.google.apphosting.utils.config.AbstractConfigXmlReader readConfigXml
+[INFO] Información: Successfully processed C:\Users\Usuario\git\basic\webapp\target\webapp-1.0-SNAPSHOT\WEB-INF/web.xml
+[INFO] jul 26, 2014 5:57:16 PM com.google.appengine.tools.development.SystemPropertiesManager setSystemProperties
+[INFO] Información: Overwriting system property key 'java.util.logging.config.file', value 'C:\Users\Usuario\.m2\repository\com\google\appengine\appengine-java-sdk\1.8.4\appengine-java-sdk\appengine-java-sdk-1.8.4\config\sdk\logging.properties' with value 'WEB-INF/logging.properties' from 'C:\Users\Usuario\git\basic\webapp\target\webapp-1.0-SNAPSHOT\WEB-INF\appengine-web.xml'
+[INFO] jul 26, 2014 5:57:16 PM com.google.apphosting.utils.jetty.JettyLogger info
+[INFO] Información: Logging to JettyLogger(null) via com.google.apphosting.utils.jetty.JettyLogger
+[INFO] jul 26, 2014 8:57:16 PM com.google.apphosting.utils.jetty.JettyLogger info
+[INFO] Información: jetty-6.1.x
+[INFO] jul 26, 2014 8:57:17 PM com.google.appengine.tools.development.ApiProxyLocalImpl log
+[INFO] Información: javax.servlet.ServletContext log: Initializing Spring root WebApplicationContext
+[INFO] jul 26, 2014 8:57:17 PM org.springframework.web.context.ContextLoader initWebApplicationContext
+[INFO] Información: Root WebApplicationContext: initialization started
+[INFO] jul 26, 2014 8:57:17 PM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+[INFO] Información: Refreshing Root WebApplicationContext: startup date [Sat Jul 26 20:57:17 UTC 2014]; root of context hierarchy
+[INFO] jul 26, 2014 8:57:17 PM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+[INFO] Información: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1a5d1a4: defining beans []; root of factory hierarchy
+[INFO] jul 26, 2014 8:57:17 PM org.springframework.web.context.ContextLoader initWebApplicationContext
+[INFO] Información: Root WebApplicationContext: initialization completed in 356 ms
+[INFO] jul 26, 2014 8:57:18 PM com.opensymphony.xwork2.util.logging.commons.CommonsLogger info
+[INFO] Información: Parsing configuration file [struts-default.xml]
+[INFO] jul 26, 2014 8:57:18 PM com.opensymphony.xwork2.util.logging.commons.CommonsLogger info
+[INFO] Información: Parsing configuration file [struts-plugin.xml]
+[INFO] jul 26, 2014 8:57:18 PM com.opensymphony.xwork2.util.logging.commons.CommonsLogger info
+[INFO] Información: Parsing configuration file [struts.xml]
+[INFO] jul 26, 2014 8:57:18 PM com.opensymphony.xwork2.util.logging.commons.CommonsLogger info
+[INFO] Información: Choosing bean (spring) for (com.opensymphony.xwork2.ObjectFactory)
+[INFO] jul 26, 2014 8:57:18 PM com.opensymphony.xwork2.util.logging.commons.CommonsLogger info
+[INFO] Información: Choosing bean (struts) for (com.opensymphony.xwork2.FileManager)
+[INFO] jul 26, 2014 8:57:18 PM com.opensymphony.xwork2.util.logging.commons.CommonsLogger info
+[INFO] Información: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)
+[INFO] jul 26, 2014 8:57:18 PM com.opensymphony.xwork2.util.logging.commons.CommonsLogger info
+[INFO] Información: Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)
+[INFO] jul 26, 2014 8:57:18 PM com.opensymphony.xwork2.util.logging.commons.CommonsLogger info
+[INFO] Información: Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)
+[INFO] jul 26, 2014 8:57:18 PM com.opensymphony.xwork2.util.logging.commons.CommonsLogger info
+[INFO] Información: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)
+[INFO] jul 26, 2014 8:57:18 PM com.opensymphony.xwork2.util.logging.commons.CommonsLogger info
+[INFO] Información: Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)
+[INFO] jul 26, 2014 8:57:18 PM com.opensymphony.xwork2.util.logging.commons.CommonsLogger info
+[INFO] Información: Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)
+[INFO] jul 26, 2014 8:57:18 PM com.opensymphony.xwork2.util.logging.commons.CommonsLogger info
+[INFO] Información: Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)
+[INFO] jul 26, 2014 8:57:18 PM com.opensymphony.xwork2.util.logging.commons.CommonsLogger info
+[INFO] Información: Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)
+[INFO] jul 26, 2014 8:57:18 PM com.opensymphony.xwork2.util.logging.commons.CommonsLogger info
+[INFO] Información: Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)
+[INFO] jul 26, 2014 8:57:18 PM com.opensymphony.xwork2.util.logging.commons.CommonsLogger info
+[INFO] Información: Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)
+[INFO] jul 26, 2014 8:57:18 PM com.opensymphony.xwork2.util.logging.commons.CommonsLogger info
+[INFO] Información: Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)
+[INFO] jul 26, 2014 8:57:18 PM com.opensymphony.xwork2.util.logging.commons.CommonsLogger info
+[INFO] Información: Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)
+[INFO] jul 26, 2014 8:57:18 PM com.opensymphony.xwork2.util.logging.commons.CommonsLogger info
+[INFO] Información: Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)
+[INFO] jul 26, 2014 8:57:18 PM com.opensymphony.xwork2.util.logging.commons.CommonsLogger info
+[INFO] Información: Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)
+[INFO] jul 26, 2014 8:57:18 PM com.opensymphony.xwork2.util.logging.commons.CommonsLogger info
+[INFO] Información: Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)
+[INFO] jul 26, 2014 8:57:18 PM com.opensymphony.xwork2.util.logging.commons.CommonsLogger info
+[INFO] Información: Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)
+[INFO] jul 26, 2014 8:57:18 PM com.opensymphony.xwork2.util.logging.commons.CommonsLogger info
+[INFO] Información: Overriding property struts.i18n.reload - old value: false new value: true
+[INFO] jul 26, 2014 8:57:18 PM com.opensymphony.xwork2.util.logging.commons.CommonsLogger info
+[INFO] Información: Overriding property struts.configuration.xml.reload - old value: false new value: true
+[INFO] jul 26, 2014 8:57:18 PM com.opensymphony.xwork2.util.logging.commons.CommonsLogger info
+[INFO] Información: Loading global messages from global
+[INFO] jul 26, 2014 8:57:18 PM com.opensymphony.xwork2.util.logging.commons.CommonsLogger info
+[INFO] Información: Initializing Struts-Spring integration...
+[INFO] jul 26, 2014 8:57:18 PM com.opensymphony.xwork2.util.logging.commons.CommonsLogger info
+[INFO] Información: Setting autowire strategy to name
+[INFO] jul 26, 2014 8:57:18 PM com.opensymphony.xwork2.util.logging.commons.CommonsLogger info
+[INFO] Información: ... initialized Struts-Spring integration successfully
+[INFO] jul 26, 2014 8:57:19 PM com.google.apphosting.utils.jetty.JettyLogger info
+[INFO] Información: Started SelectChannelConnector@127.0.0.1:8080
+[INFO] jul 26, 2014 8:57:19 PM com.google.appengine.tools.development.JettyContainerService startHotDeployScanner
+[INFO] Información: Full scan of the web app in place every 5s.
+[INFO] jul 26, 2014 8:57:19 PM com.google.appengine.tools.development.AbstractModule startup
+[INFO] Información: Module instance default is running at http://localhost:8080/
+[INFO] jul 26, 2014 8:57:19 PM com.google.appengine.tools.development.AbstractModule startup
+[INFO] Información: The admin console is running at http://localhost:8080/_ah/admin
+[INFO] jul 26, 2014 5:57:19 PM com.google.appengine.tools.development.DevAppServerImpl start
+[INFO] Información: Dev App Server is now running
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building webapp 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> appengine-maven-plugin:1.8.4:devserver (default-cli) > package @ webapp >>>
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ webapp ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 8 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ webapp ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ webapp ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\Usuario\git\basic\webapp\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ webapp ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ webapp ---
+[INFO] Surefire report directory: C:\Users\Usuario\git\basic\webapp\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running ar.com.vga.GuestbookServletTest

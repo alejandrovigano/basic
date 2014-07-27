@@ -1,0 +1,1 @@
+mvn appengine:devserver -o >> a.txt
