@@ -17,10 +17,10 @@
 		<div class="main">
 			<div class="main-top">
 				<div class="transparent p1">
-					<jsp:include page="includes/main/image_carousel.jsp" />
+					<jsp:include page="main/image_carousel.jsp" />
 				</div>
 				<div class="section group">
-					<s:iterator value="entries" var="entry">
+					<s:iterator value="lastEntries" var="entry">
 						<div class="col_1_of_3 span_1_of_3">
 							<h3>
 								<s:property value="#entry.titulo" />
@@ -28,7 +28,7 @@
 							<p>
 								<s:property value="#entry.content" />
 							</p>
-							<button class="btn1 btn-8 btn-8a">More</button>
+							<button class="btn1 btn-8 btn-8a" href="singleAction.do?id=<s:property value="#entry.id" />" >More</button>
 						</div>
 					</s:iterator>
 
@@ -53,21 +53,15 @@
 				</div>
 				<div class="section group">
 
-					<s:iterator value="entries" var="entry">
+					<s:iterator value="eventEntries" var="entry">
 
 						<div class="col_1_of_4 span_1_of_4">
+							<h3>
+								<s:property value="#entry.titulo" />
+							</h3>
 							<div class="view effect">
-								<a href="single.html"> <img
+								<a href="singleAction.do?id=<s:property value="#entry.id" />"> <img
 									src="<s:property value="#entry.imageurl" />" alt=""></a>
-							</div>
-							<div class="cart">
-								<p class="title" style="height: 38px;">
-									<s:property value="#entry.titulo" />
-								</p>
-								<div class="price" style="height: 19px;">
-									<span class="actual">$<s:property value="#entry.precio" /></span>
-								</div>
-								<input type="submit" value="Add to Cart" class="button">
 							</div>
 						</div>
 

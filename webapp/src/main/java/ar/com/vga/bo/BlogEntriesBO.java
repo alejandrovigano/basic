@@ -33,20 +33,21 @@ public class BlogEntriesBO {
 
 		ArrayList<BlogEntry> entries = new ArrayList<BlogEntry>();
 		entries.add(entry);
-		
+
 		BlogEntry entry2 = new BlogEntry();
 		entry2.setAutor("A Vigano");
-		entry2.setSoundcloudUrl( "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/6005276&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false" );
+		entry2.setSoundcloudUrl("https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/6005276&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false");
 		entry2.setFechaCreacion(new Date());
 		entry2.setImageurl("http://i57.tinypic.com/zacra.jpg");
 		entry2.setTitulo("RandomLink!");
 		entry2.setId(11111111111112L);
 		entries.add(entry2);
 
-		
-		
-		
 		return entries;
+	}
+
+	public List<BlogEntry> lastestEvent() {
+		return mock();
 	}
 
 }

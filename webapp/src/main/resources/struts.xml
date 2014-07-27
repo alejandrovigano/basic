@@ -12,7 +12,7 @@
 	<package name="basic" namespace="/" extends="struts-default">
 
 		<action name="homeAction" class="ar.com.vga.action.HomeAction">
-			<result name="success">pages/home.jsp</result>
+			<result name="success">pages/index.jsp</result>
 		</action>
 
 		<action name="blogAction" method="prepareShow" class="ar.com.vga.action.BlogAction">

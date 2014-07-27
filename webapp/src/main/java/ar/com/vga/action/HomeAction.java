@@ -10,9 +10,15 @@ public class HomeAction extends AbstractAction {
 
 	private BlogEntriesBO blogBo = new BlogEntriesBO();
 	private List<BlogEntry> lastEntries;
+	private List<BlogEntry> eventEntries;
+
+	public List<BlogEntry> getEventEntries() {
+		return eventEntries;
+	}
 
 	public String execute() {
 		lastEntries = blogBo.lastestEntries();
+		eventEntries = blogBo.lastestEvent();
 		return SUCCESS;
 	}
 
@@ -20,5 +26,4 @@ public class HomeAction extends AbstractAction {
 		return lastEntries;
 	}
 
-	
 }

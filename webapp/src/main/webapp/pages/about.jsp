@@ -169,7 +169,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<div class="clear"></div>
 				</div>
 			</div>
-			<jsp:include page="includes/common_footer.jsp" />S
+			<jsp:include page="includes/common_footer.jsp" />
 		</div>
 	</div>
 </body>
