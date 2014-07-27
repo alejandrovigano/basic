@@ -55,7 +55,7 @@ body{
 	padding-bottom: 20px;
 }
 .header-bot{
-	border-bottom:5px solid #b02f32;
+	border-bottom:5px solid #8c0000;
 }
 .follow_icon {
 	list-style: none;
@@ -81,7 +81,7 @@ body{
 	float: left;
 }
 .top-nav li.active> a, .top-nav li> a:hover {
-	background:#b02f32;
+	background:#8c0000;
 	color: #FFF;
 }
 .top-nav ul li a {
@@ -225,7 +225,7 @@ body{
 	padding:1.5%; 
 }
 .span_1_of_4  h3{
-	color:#fff;
+	color:#C94848;
 	margin-bottom: .5em;
 	font-size:1.5em;
 	line-height: 1.2;
@@ -287,7 +287,7 @@ span.actual{
 .button{
 	font-size:.8em;
 	padding:7px 15px;
-	background:#b02f32;
+	background:#8c0000;
 	color: #FFF;
 	border: none;
 	text-decoration: none;
@@ -305,7 +305,7 @@ span.actual{
 	font-size:.8em;
 	padding:7px 15px;
 	float:left;
-	background:#b02f32;
+	background:#8c0000;
 	color: #FFF;
 	border: none;
 	text-decoration: none;
@@ -516,7 +516,7 @@ transition: all 0.5s ease-in-out;
 }
 .btn-8 {
 	display: block;
-	background:#b02f32;
+	background:#8c0000;
 	-webkit-transform-style: preserve-20d;
 	-moz-transform-style: preserve-20d;
 	transform-style: preserve-20d;
@@ -557,6 +557,8 @@ margin-left: 0;
 	padding: 1.5%;
 }
 .content {
+	margin-top : 5%;
+	margin-bottom : 5%;
 	display: block;
 	float: left;
 }
@@ -632,7 +634,7 @@ p.para {
 	font-size:13px;
 }
 .comments-area span {
-	color: #b02f32;
+	color: #8c0000;
 	position: absolute;
 	left: 4px;
 	top: 30px;
@@ -724,7 +726,7 @@ p.para {
 	display: block;
 }
 span.time {
-	color:#b02f32;
+	color:#8c0000;
 	font-size: 13px;
 }
 h5.head {
@@ -937,7 +939,7 @@ input[type='text'], input[type='password'], textarea {
 	padding:7px 20px;
 	color:#FFF;
 	cursor:pointer;
-	background:#b02f32 url(../images/large-button-overlay.png);
+	background:#8c0000 url(../images/large-button-overlay.png);
 	border: 1px solid rgba(0, 0, 0, 0.25);
 	text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
 	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.50);

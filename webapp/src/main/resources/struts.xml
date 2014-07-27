@@ -27,7 +27,7 @@
 			<result name="success">pages/gallery.jsp</result>
 		</action>
 
-		<action name="singleAction" class="ar.com.vga.action.SingleAction">
+		<action name="singleAction" method="prepareShow" class="ar.com.vga.action.SingleAction">
 			<result name="success">pages/single.jsp</result>
 		</action>
 

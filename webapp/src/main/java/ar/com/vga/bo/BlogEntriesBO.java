@@ -21,7 +21,7 @@ public class BlogEntriesBO {
 		// .getDatastoreService();
 		BlogEntry entry = new BlogEntry();
 		entry.setAutor("A Vigano");
-		entry.setContent("contenido asdfsad \n asdfads \n asdasdas");
+		entry.setContent("El veloz murciélago hindú comía feliz cardillo y kiwi. La cigüeña tocaba el saxofón detrás del palenque de paja. El veloz murciélago hindú comía feliz cardillo y kiwi. La cigüeña tocaba el saxofón detrás del palenque de paja. El veloz murciélago hindú comía feliz cardillo y kiwi. La cigüeña tocaba el saxofón detrás del palenque de paja.");
 		entry.setFechaCreacion(new Date());
 		entry.setImageurl("http://i57.tinypic.com/zacra.jpg");
 		entry.setTitulo("Ya arrancamos!!");
@@ -48,6 +48,10 @@ public class BlogEntriesBO {
 
 	public List<BlogEntry> lastestEvent() {
 		return mock();
+	}
+
+	public BlogEntry getEntry(long id) {
+		return mock().get(0);
 	}
 
 }

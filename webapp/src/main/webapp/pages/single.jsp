@@ -15,13 +15,15 @@
 			<div class="main-top">
 				<div class="section group">
 					<div class="content span_1_of_2">
-						<div class="grid images_3_of_2">
+						<div class="grid images_3_of_2"> 
 							<img src="<s:property value="entry.imageurl" />" alt="" />
 						</div>
-						<div class="desc span_3_of_2">
-							<h3>
-								<s:property value="entry.titulo" />
-							</h3>
+						<div class="desc span_3_of_2" style="margin-top: 10px;">
+							<div class="desc" id="#title">
+								<h3>
+									<s:property value="entry.titulo" />
+								</h3>
+							</div>
 							<div class="desc">
 								<p class="para">
 									<s:property value="entry.content" />
@@ -34,22 +36,8 @@
 							</div>
 						</div>
 
-						<div class="links">
-							<ul>
-								<li><a href="#"><img src="images/blog-icon1.png"
-										title="date"><span>june 14, 2013</span></a></li>
-								<li><a href="#"><img src="images/blog-icon2.png"
-										title="Admin"><span>admin</span></a></li>
-								<li><a href="#"><img src="images/blog-icon3.png"
-										title="Comments"><span>No comments</span></a></li>
-								<li><a href="#"><img src="images/blog-icon4.png"
-										title="Lables"><span>View posts</span></a></li>
-								<li><a href="#"><img src="images/blog-icon5.png"
-										title="permalink"><span>permalink</span></a></li>
-							</ul>
-						</div>
 						<div class="leave-comment">
-							<div class="fb-comments"
+							<div class="fb-comments" style="margin-top: 5%; margin-bottom: 5%;" 
 								data-href="http://ar.com.alme.previa.show/post/<s:property value="#entry.id" />"
 								data-numposts="2" data-colorscheme="dark"></div>
 						</div>
