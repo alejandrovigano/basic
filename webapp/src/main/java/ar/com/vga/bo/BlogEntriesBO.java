@@ -26,7 +26,8 @@ public class BlogEntriesBO {
 		entry.setImageurl("http://i57.tinypic.com/zacra.jpg");
 		entry.setTitulo("Ya arrancamos!!");
 		entry.setId(11111111111111L);
-
+		entry.setPrecio(530.00);
+ 
 		// Key key = dataService.put(entry.toEntity());
 
 		// System.out.println(key.getId());
