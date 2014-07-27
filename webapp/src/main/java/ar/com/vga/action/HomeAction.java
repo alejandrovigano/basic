@@ -1,14 +1,24 @@
 package ar.com.vga.action;
 
-import com.opensymphony.xwork2.ActionSupport;
+import java.util.List;
 
-public class HomeAction extends ActionSupport {
+import ar.com.vga.bo.BlogEntriesBO;
+
+public class HomeAction extends AbstractAction {
 
 	private static final long serialVersionUID = 4899761917248012629L;
 
-	public String prepareShow(){
-		
+	private BlogEntriesBO blogBo = new BlogEntriesBO();
+	private List<BlogEntry> lastEntries;
+
+	public String execute() {
+		lastEntries = blogBo.lastestEntries();
 		return SUCCESS;
 	}
+
+	public List<BlogEntry> getLastEntries() {
+		return lastEntries;
+	}
+
 	
 }

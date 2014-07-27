@@ -5,18 +5,32 @@
 
 <struts>
 	<constant name="struts.devMode" value="true" />
-	<constant name="struts.action.extension" value="do"/> 
-	
+	<constant name="struts.action.extension" value="do" />
+	<constant name="struts.custom.i18n.resources" value="global"></constant>
+
 
 	<package name="basic" namespace="/" extends="struts-default">
 
-<!-- 		<action name=""> -->
-<!-- 			<result type="redirectAction">homeAction</result> -->
-<!-- 		</action> -->
-
-		<action name="homeAction" class="home.action">
+		<action name="homeAction" class="ar.com.vga.action.HomeAction">
 			<result name="success">pages/home.jsp</result>
 		</action>
+
+		<action name="blogAction" method="prepareShow" class="ar.com.vga.action.BlogAction">
+			<result name="success">pages/blog.jsp</result>
+		</action>
+
+		<action name="contactAction" class="ar.com.vga.action.ContactAction">
+			<result name="success">pages/contact.jsp</result>
+		</action>
+
+		<action name="galleryAction" class="ar.com.vga.action.GalleryAction">
+			<result name="success">pages/gallery.jsp</result>
+		</action>
+
+		<action name="singleAction" class="ar.com.vga.action.SingleAction">
+			<result name="success">pages/single.jsp</result>
+		</action>
+
 	</package>
 
 </struts>
