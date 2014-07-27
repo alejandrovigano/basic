@@ -20,8 +20,17 @@ public class BlogEntry {
 	private String imageurl;
 	private Date fechaCreacion;
 	private String soundcloudUrl;
+	private double precio;
 	private Key key;
 	private long id;
+
+	public double getPrecio() {
+		return precio;
+	}
+
+	public void setPrecio(double precio) {
+		this.precio = precio;
+	}
 
 	public String getSoundcloudUrl() {
 		return soundcloudUrl;
