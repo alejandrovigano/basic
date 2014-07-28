@@ -30,6 +30,14 @@
 		<action name="singleAction" method="prepareShow" class="ar.com.vga.action.SingleAction">
 			<result name="success">pages/single.jsp</result>
 		</action>
+		
+		<action name="adminAction" method="admin" class="ar.com.vga.action.SingleAction">
+			<result name="createEdit">pages/adminSingle.jsp</result>
+		</action>
+
+		<action name="saveAction" method="save" class="ar.com.vga.action.SingleAction">
+			<result name="createEdit">pages/single.jsp</result>
+		</action>
 
 	</package>
 

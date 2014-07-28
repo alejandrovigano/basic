@@ -6,7 +6,7 @@ public class SingleAction extends AbstractAction {
 
 	private BlogEntry entry;
 
-	private long id;
+	private Long id;
 
 	private BlogEntriesBO blogBo = new BlogEntriesBO();
 
@@ -16,12 +16,27 @@ public class SingleAction extends AbstractAction {
 		entry = blogBo.getEntry(id);
 		return SUCCESS;
 	}
+	
+	public String admin(){
+		entry = new BlogEntry();
+		if(id != null && id.equals(Long.valueOf(0l))){			
+			entry = blogBo.getEntry(id);
+		}
+			
+		return "createEdit";
+	}
+	
+	public String save(){
+		blogBo.save(entry);
+		return SUCCESS;
+	}
 
-	public long getId() {
+	
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 

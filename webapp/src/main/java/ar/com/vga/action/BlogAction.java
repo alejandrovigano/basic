@@ -14,7 +14,7 @@ public class BlogAction extends AbstractAction {
 
 
 	public String prepareShow() {
-		entries = blogBo.entries();
+	//	entries = blogBo.entries();
 		return SUCCESS;
 	}
 

@@ -12,7 +12,7 @@ public class BlogEntriesBO {
 		return mock();
 	}
 
-	public List<BlogEntry> entries(/* filter */) {
+	public List<BlogEntry> stickyEntries() { 
 		return mock();
 	}
 
@@ -53,6 +53,11 @@ public class BlogEntriesBO {
 
 	public BlogEntry getEntry(long id) {
 		return mock().get(0);
+	}
+
+	public void save(BlogEntry entry) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

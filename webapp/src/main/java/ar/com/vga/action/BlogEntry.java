@@ -14,15 +14,24 @@ public class BlogEntry {
 	public static String IMAGE_URL = "imageUrl";
 	public static String FECHA_CREACION = "fechaCreacion";
 
+	private String titulo;
 	private String content;
 	private String autor;
-	private String titulo;
 	private String imageurl;
 	private Date fechaCreacion;
 	private String soundcloudUrl;
+	private String youtubeUrl;
 	private double precio;
 	private Key key;
 	private long id;
+
+	public String getYoutubeUrl() {
+		return youtubeUrl;
+	}
+
+	public void setYoutubeUrl(String youtubeUrl) {
+		this.youtubeUrl = youtubeUrl;
+	}
 
 	public double getPrecio() {
 		return precio;

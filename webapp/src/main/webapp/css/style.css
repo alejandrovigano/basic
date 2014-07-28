@@ -120,6 +120,7 @@ body {
 
 .logo {
 	float: left;
+	width: 350px;
 }
 
 .header-top {
@@ -159,14 +160,20 @@ body {
 }
 
 .top-nav li.active>a, .top-nav li>a:hover {
-	background: #8c0000;
+	background: -webkit-linear-gradient(black, #8c0000);
+	background: -o-linear-gradient(black, #8c0000);
+	background: -moz-linear-gradient(black, #8c0000);
+	background: linear-gradient(black, #8c0000);
 	color: #FFF;
+	background: -o-linear-gradient(black, #8c0000);
+	background: -moz-linear-gradient(black, #8c0000);
+	background: linear-gradient(black, #8c0000);
 }
 
 .top-nav ul li a {
 	color: #fff;
 	text-transform: uppercase;
-	padding: 50px 30px;
+	padding: 145px 40px;
 	display: block;
 	font-weight: normal;
 	transition: 0.5s ease;
@@ -695,7 +702,8 @@ span.actual {
 
 .content {
 	margin-top: 5%;
-	margin-bottom: 5%; display : block;
+	margin-bottom: 5%;
+	display: block;
 	float: left;
 	display: block;
 }
@@ -1532,11 +1540,13 @@ input[type='text'], input[type='password'], textarea {
 }
 
 #fixedHeaderWrapper {
+	opacity: 0.8;
+	filter: alpha(opacity = 8);
 	position: fixed;
 	top: 0px;
 	left: 0px;
 	width: 100%;
 	height: 32px;
 	z-index: 999999;
-	background: #313131;
+	background: #000000;
 }
