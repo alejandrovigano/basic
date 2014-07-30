@@ -19,6 +19,8 @@ public class BlogEntry {
 	private String autor;
 	private String imageurl;
 	private Date fechaCreacion;
+	private Date fechaExpiracion;
+
 	private String soundcloudUrl;
 	private String youtubeUrl;
 	private double precio;
