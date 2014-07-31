@@ -2,10 +2,6 @@ package ar.com.vga.action;
 
 import java.util.Date;
 
-import com.google.appengine.api.datastore.Entity;
-import com.google.appengine.api.datastore.Key;
-import com.google.appengine.api.datastore.Text;
-
 public class BlogEntry {
 
 	public static String CONTENT = "content";
@@ -17,54 +13,21 @@ public class BlogEntry {
 	private String titulo;
 	private String content;
 	private String autor;
-	private String imageurl;
+	private String imagen;
 	private Date fechaCreacion;
 	private Date fechaExpiracion;
 
-	private String soundcloudUrl;
-	private String youtubeUrl;
+	private String soundcloud;
+	private String youtube;
 	private double precio;
-	private Key key;
 	private long id;
 
-	public String getYoutubeUrl() {
-		return youtubeUrl;
+	public String getTitulo() {
+		return titulo;
 	}
 
-	public void setYoutubeUrl(String youtubeUrl) {
-		this.youtubeUrl = youtubeUrl;
-	}
-
-	public double getPrecio() {
-		return precio;
-	}
-
-	public void setPrecio(double precio) {
-		this.precio = precio;
-	}
-
-	public String getSoundcloudUrl() {
-		return soundcloudUrl;
-	}
-
-	public void setSoundcloudUrl(String soundcloudUrl) {
-		this.soundcloudUrl = soundcloudUrl;
-	}
-
-	public long getId() {
-		return id;
-	}
-
-	public void setId(long id) {
-		this.id = id;
-	}
-
-	public Key getKey() {
-		return key;
-	}
-
-	public void setKey(Key key) {
-		this.key = key;
+	public void setTitulo(String titulo) {
+		this.titulo = titulo;
 	}
 
 	public String getContent() {
@@ -83,20 +46,12 @@ public class BlogEntry {
 		this.autor = autor;
 	}
 
-	public String getTitulo() {
-		return titulo;
+	public String getImagen() {
+		return imagen;
 	}
 
-	public void setTitulo(String titulo) {
-		this.titulo = titulo;
-	}
-
-	public String getImageurl() {
-		return imageurl;
-	}
-
-	public void setImageurl(String imageurl) {
-		this.imageurl = imageurl;
+	public void setImagen(String imagen) {
+		this.imagen = imagen;
 	}
 
 	public Date getFechaCreacion() {
@@ -107,17 +62,44 @@ public class BlogEntry {
 		this.fechaCreacion = fechaCreacion;
 	}
 
-	public Entity toEntity() {
+	public Date getFechaExpiracion() {
+		return fechaExpiracion;
+	}
 
-		Entity entity = new Entity("BlogEntryTest");
+	public void setFechaExpiracion(Date fechaExpiracion) {
+		this.fechaExpiracion = fechaExpiracion;
+	}
 
-		entity.setProperty(AUTOR, getAutor());
-		entity.setProperty(CONTENT, getContent());
-		entity.setProperty(TITULO, getTitulo());
-		entity.setProperty(IMAGE_URL, getImageurl());
-		entity.setProperty(FECHA_CREACION, getFechaCreacion());
+	public String getSoundcloud() {
+		return soundcloud;
+	}
 
-		return entity;
+	public void setSoundcloud(String soundcloud) {
+		this.soundcloud = soundcloud;
+	}
+
+	public String getYoutube() {
+		return youtube;
+	}
+
+	public void setYoutube(String youtube) {
+		this.youtube = youtube;
+	}
+
+	public double getPrecio() {
+		return precio;
+	}
+
+	public void setPrecio(double precio) {
+		this.precio = precio;
+	}
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
 	}
 
 }

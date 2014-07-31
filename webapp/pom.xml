@@ -9,13 +9,6 @@
 	<groupId>ar.com.vga</groupId>
 	<artifactId>webapp</artifactId>
 
-	<pluginRepositories>
-		<pluginRepository>
-			<id>google-staging</id>
-			<name>Google Staging</name>
-			<url>https://oss.sonatype.org/content/repositories/comgoogleappengine-1004/</url>
-		</pluginRepository>
-	</pluginRepositories>
 
 	<properties>
 		<appengine.app.version>1</appengine.app.version>
@@ -39,11 +32,6 @@
 		</dependency>
 
 		<!-- Compile/runtime dependencies -->
-		<dependency>
-			<groupId>com.google.appengine</groupId>
-			<artifactId>appengine-api-1.0-sdk</artifactId>
-			<version>${appengine.target.version}</version>
-		</dependency>
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>servlet-api</artifactId>
@@ -69,18 +57,7 @@
 			<version>1.9.0</version>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>com.google.appengine</groupId>
-			<artifactId>appengine-testing</artifactId>
-			<version>${appengine.target.version}</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>com.google.appengine</groupId>
-			<artifactId>appengine-api-stubs</artifactId>
-			<version>${appengine.target.version}</version>
-			<scope>test</scope>
-		</dependency>
+
 	</dependencies>
 
 	<build>
@@ -128,11 +105,6 @@
 				</configuration>
 			</plugin>
 
-			<plugin>
-				<groupId>com.google.appengine</groupId>
-				<artifactId>appengine-maven-plugin</artifactId>
-				<version>${appengine.target.version}</version>
-			</plugin>
 		</plugins>
 	</build>
 
