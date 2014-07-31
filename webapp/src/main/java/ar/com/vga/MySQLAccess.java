@@ -27,7 +27,7 @@ public class MySQLAccess {
 			// setup the connection with the DB.
 			connect = DriverManager.getConnection("jdbc:mysql://"
 					+ System.getenv("OPENSHIFT_MYSQL_DB_HOST") + ":"
-					+ System.getenv("OPENSHIFT_MYSQL_DB_PORT") + "/redpage?"
+					+ System.getenv("OPENSHIFT_MYSQL_DB_PORT") + "/redalme?"
 					+ "user=" + System.getenv("OPENSHIFT_MYSQL_DB_USERNAME")
 					+ "&password="
 					+ System.getenv("OPENSHIFT_MYSQL_DB_PASSWORD"));
