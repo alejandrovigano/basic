@@ -31,14 +31,27 @@
 			<result name="success">pages/single.jsp</result>
 		</action>
 		
-		<action name="adminAction" method="admin" class="ar.com.vga.action.SingleAction">
-			<result name="createEdit">pages/adminSingle.jsp</result>
+		<action name="adminAction" method="admin" class="ar.com.vga.action.AdminAction">
+			<result name="createEdit">pages/adminSingle.jsp</result> 
+			<interceptor-ref name="defaultStack">
+                <param name="maximumSize">10485760</param>
+                <param name="allowedTypes">image/jpeg,image/png,image/gif,image/pjpeg</param>
+            </interceptor-ref>
 		</action>
 
 		<action name="saveAction" method="save" class="ar.com.vga.action.SingleAction">
 			<result name="createEdit">pages/single.jsp</result>
 		</action>
 
+		
+		<action name="uploadFilesAdminAction" method="uploadFiles" class="ar.com.vga.action.AdminAction">
+			<result name="success">pages/adminSingle.jsp</result> 
+			<interceptor-ref name="defaultStack">
+                <param name="maximumSize">10485760</param>
+                <param name="allowedTypes">image/jpeg,image/png,image/gif,image/pjpeg</param>
+            </interceptor-ref>
+		</action>
+		
 	</package>
 
 </struts>

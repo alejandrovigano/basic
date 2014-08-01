@@ -1,6 +1,7 @@
 package ar.com.vga.action;
 
 import ar.com.vga.bo.BlogEntriesBO;
+import ar.com.vga.entities.BlogEntry;
 
 public class SingleAction extends AbstractAction {
 

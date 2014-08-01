@@ -3,6 +3,7 @@ package ar.com.vga.action;
 import java.util.List;
 
 import ar.com.vga.bo.BlogEntriesBO;
+import ar.com.vga.entities.BlogEntry;
 
 public class HomeAction extends AbstractAction {
 

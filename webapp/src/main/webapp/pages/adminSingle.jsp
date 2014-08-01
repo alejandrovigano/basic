@@ -14,10 +14,19 @@
 		<div class="main">
 			<div class="main-top">
 				<div class="section group">
+
+					<s:if test="hasActionErrors()">
+						<s:actionerror />
+					</s:if>
+					<!-- show success message only when file successfully uploads -->
+					<s:if test="hasActionMessages()">
+						<s:actionmessage />
+					</s:if>
+
 					<s:form>
 						<table style="background-color: white;">
 							<tr>
-							 	<td><a><s:label> Titulo  </s:label></a></td>
+								<td><a><s:label> Titulo  </s:label></a></td>
 								<td><s:textfield name="entry.titulo"></s:textfield></td>
 							</tr>
 							<tr>
@@ -45,10 +54,19 @@
 								<td><s:textfield name="entry.precio"></s:textfield></td>
 							</tr>
 							<tr>
-								<td><s:submit action="saveAction"></s:submit></td>
+								<td><s:submit action="saveAction" label="GUARDAR POST"></s:submit></td>
 							</tr>
 						</table>
 					</s:form>
+
+
+					<s:form action="uploadFilesAdminAction" method="post"
+						enctype="multipart/form-data">
+						<!-- input type file for file upload, make sure to set multiple="multiple" for multiple uploads -->
+						<s:file label="File" name="files" multiple="multiple"></s:file>
+						<s:submit value="Upload Files"></s:submit>
+					</s:form>
+
 					<div class="clear"></div>
 				</div>
 			</div>

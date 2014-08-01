@@ -5,7 +5,7 @@ import java.util.Date;
 import java.util.List;
 
 import ar.com.vga.MySQLAccess;
-import ar.com.vga.action.BlogEntry;
+import ar.com.vga.entities.BlogEntry;
 
 public class BlogEntriesBO {
 
